@@ -21,28 +21,45 @@
 // 	fmt.Println(number)
 // }
 
+// package main
+
+// import (
+// 	"fmt"
+// 	"log"
+// 	"os"
+// )
+
+// func main() {
+// 	f, err := os.Open("hello.txt")
+
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+
+// 	defer f.Close()
+// 	//  get file info
+// 	info, err := f.Stat()
+// 	if err != nil {
+// 		log.Fatal(err)
+// 	}
+
+// 	fmt.Printf("File name: %s\n", info.Name())
+// 	// fmt.Printf(info.Size())
+// }
+
 package main
 
-import (
-	"fmt"
-	"log"
-	"os"
-)
+import "fmt"
 
 func main() {
-	f, err := os.Open("hello.txt")
+	// short variable
+	// a := "This is a variable "
 
-	if err != nil {
-		log.Fatal(err)
-	}
+	// fmt.Println(a)
 
-	defer f.Close()
-	//  get file info
-	info, err := f.Stat()
-	if err != nil {
-		log.Fatal(err)
-	}
+	// long variable
+	var a string
 
-	fmt.Printf("File name: %s\n", info.Name())
-	// fmt.Printf(info.Size())
+	a = "This is longer longer variable i think "
+	fmt.Println(a)
 }
