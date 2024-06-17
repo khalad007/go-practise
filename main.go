@@ -47,19 +47,31 @@
 // 	// fmt.Printf(info.Size())
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	// short variable
+// 	// a := "This is a variable "
+
+// 	// fmt.Println(a)
+
+// 	// long variable
+// 	var a string
+
+// 	a = "This is longer longer variable i think "
+// 	fmt.Println(a)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	// short variable
-	// a := "This is a variable "
+	primes := [6]int{2, 3, 5, 7, 11, 13}
 
-	// fmt.Println(a)
+	var s []int = primes[1:4]
 
-	// long variable
-	var a string
-
-	a = "This is longer longer variable i think "
-	fmt.Println(a)
+	fmt.Println(s)
 }
