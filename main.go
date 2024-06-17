@@ -76,13 +76,27 @@
 // 	fmt.Println(s)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	m := make(map[string]int)
+// 	m["ONE"] = 1
+
+// 	fmt.Println(m)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	m := make(map[string]int)
-	m["ONE"] = 1
 
-	fmt.Println(m)
+	sum := 0
+	for i := 0; i < 10; i++ {
+		sum += i
+	}
+
+	fmt.Println(sum)
 }
