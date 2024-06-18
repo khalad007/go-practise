@@ -115,20 +115,42 @@
 // 	fmt.Println(sum)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	// range
+// 	// s := []int{1, 2, 3, 4, 5}
+
+// 	// for i, v := range s {
+// 	// 	fmt.Println(i, v)
+// 	// }
+
+// 	// infinite
+// 	for {
+// 		fmt.Println("Infinite loop ")
+// 	}
+// }
+
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"runtime"
+)
 
 func main() {
-	// range
-	// s := []int{1, 2, 3, 4, 5}
-
-	// for i, v := range s {
-	// 	fmt.Println(i, v)
-	// }
-
-	// infinite
-	for {
-		fmt.Println("Infinite loop ")
+	// switch statements
+	fmt.Println("Go run on ")
+	switch os := runtime.GOOS; os {
+	case "darwin":
+		fmt.Println("OS x.")
+	case "linux":
+		fmt.Println("Linux")
+	case "window":
+		fmt.Println("Window")
+	default:
+		fmt.Printf("%s.\n", os)
 	}
 }
