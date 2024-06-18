@@ -101,16 +101,34 @@
 // 	fmt.Println(sum)
 // }
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	sum := 0
+// // don't have while loop but can use for loop as a while loop
+// 	for sum < 1000 {
+// 		sum += sum
+// 	}
+
+// 	fmt.Println(sum)
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	sum := 0
+	// range
+	// s := []int{1, 2, 3, 4, 5}
 
-	for sum < 1000 {
-		sum += sum
+	// for i, v := range s {
+	// 	fmt.Println(i, v)
+	// }
+
+	// infinite
+	for {
+		fmt.Println("Infinite loop ")
 	}
-
-	fmt.Println(sum)
 }
