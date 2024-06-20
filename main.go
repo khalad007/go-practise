@@ -133,24 +133,45 @@
 // 	}
 // }
 
+// package main
+
+// import (
+// 	"fmt"
+// 	"runtime"
+// )
+
+// func main() {
+// 	// switch statements
+// 	fmt.Println("Go run on ")
+// 	switch os := runtime.GOOS; os {
+// 	case "darwin":
+// 		fmt.Println("OS x.")
+// 	case "linux":
+// 		fmt.Println("Linux")
+// 	case "window":
+// 		fmt.Println("Window")
+// 	default:
+// 		fmt.Printf("%s.\n", os)
+// 	}
+// }
+
 package main
 
-import (
-	"fmt"
-	"runtime"
-)
+import "fmt"
 
+// func taht returns the sum of two int
+func add(x int, y int) int {
+	return x + y
+}
+
+// func that swap two int
+func swap(x int, y int) (int, int) {
+	return y, x
+}
 func main() {
-	// switch statements
-	fmt.Println("Go run on ")
-	switch os := runtime.GOOS; os {
-	case "darwin":
-		fmt.Println("OS x.")
-	case "linux":
-		fmt.Println("Linux")
-	case "window":
-		fmt.Println("Window")
-	default:
-		fmt.Printf("%s.\n", os)
-	}
+	result := add(5, 6)
+	fmt.Println("Sum : ", result)
+
+	a, b := swap(1, 2)
+	fmt.Println("Swapper : ", a, b)
 }
